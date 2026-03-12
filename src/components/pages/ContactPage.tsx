@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import { Image } from '@/components/ui/image';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -227,9 +228,17 @@ export default function ContactPage() {
               </div>
             </AnimatedElement>
 
-            {/* Contact Information */}
+            {/* Contact Information with Image */}
             <AnimatedElement delay={200}>
               <div className="space-y-8">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl h-96 mb-8">
+                  <Image
+                    src="https://static.wixstatic.com/media/7ab59d_5773839607304c9d882306829a398480~mv2.jpg"
+                    alt="Professional smart home installation"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
                 <div>
                   <h2 className="text-3xl font-heading font-bold text-foreground mb-6">
                     Contact Information

@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { Image } from '@/components/ui/image';
 import { Shield, Award, Users, Target, CheckCircle, Zap } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -82,23 +83,12 @@ export default function AboutPage() {
             </AnimatedElement>
 
             <AnimatedElement delay={200}>
-              <div className="grid grid-cols-2 gap-6">
-                {[
-                  { icon: Shield, label: 'Secure Solutions', value: '100%' },
-                  { icon: Award, label: 'Certified Experts', value: '10+' },
-                  { icon: Users, label: 'Happy Clients', value: '500+' },
-                  { icon: Target, label: 'Success Rate', value: '99%' }
-                ].map((stat, index) => (
-                  <div key={index} className="bg-gradient-to-br from-primary/5 to-background rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-all duration-300">
-                    <stat.icon className="w-10 h-10 text-primary mx-auto mb-3" />
-                    <div className="text-3xl font-heading font-bold text-foreground mb-2">
-                      {stat.value}
-                    </div>
-                    <div className="text-sm text-muted-foreground font-paragraph">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
+              <div className="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                <Image
+                  src="https://static.wixstatic.com/media/7ab59d_2103d790a8c34fa7aeffe7a189826991~mv2.jpg"
+                  alt="Smart home installation and setup"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </AnimatedElement>
           </div>
