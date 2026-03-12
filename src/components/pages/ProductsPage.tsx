@@ -110,7 +110,7 @@ export default function ProductsPage() {
                           <Image
                             src={product.itemImage}
                             alt={product.itemName || 'Product'}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                             width={300}
                           />
                         </div>
@@ -118,7 +118,7 @@ export default function ProductsPage() {
                     </Link>
                     <div className="p-6 flex flex-col flex-1">
                       <Link to={`/products/${product._id}`}>
-                        <h3 className="text-xl font-heading font-bold text-foreground mb-2 hover:text-primary transition-colors">
+                        <h3 className="text-lg font-heading font-bold text-foreground mb-2 hover:text-primary transition-colors">
                           {product.itemName}
                         </h3>
                       </Link>
@@ -128,7 +128,7 @@ export default function ProductsPage() {
                         </p>
                       )}
                       <div className="mt-auto">
-                        <p className="text-2xl font-bold text-primary mb-4">
+                        <p className="text-xl font-bold text-foreground mb-4">
                           {formatPrice(product.itemPrice || 0, currency ?? DEFAULT_CURRENCY)}
                         </p>
                         <Button

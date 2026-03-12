@@ -63,22 +63,22 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Who We Are Section */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <AnimatedElement>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-                Our Mission
+                Who We Are
               </h2>
               <p className="text-lg text-muted-foreground font-paragraph mb-6">
-                At Mokutu HomeTech, we believe that every home deserves to be smart, secure, and connected. Our mission is to make advanced home technology accessible and easy to use for everyone.
+                Mokutu HomeTech is a leading provider of smart home solutions and professional installation services. Based in Johannesburg, South Africa, we specialize in bringing cutting-edge home automation technology to residential and commercial properties.
               </p>
               <p className="text-lg text-muted-foreground font-paragraph mb-6">
-                We specialize in professional installation and configuration of smart home devices, ensuring that your technology works seamlessly together to enhance your daily life.
+                Our team of certified technicians has years of experience in smart home installation, network optimization, and system integration. We're committed to delivering exceptional service and helping our clients transform their living spaces.
               </p>
               <p className="text-lg text-muted-foreground font-paragraph">
-                With years of experience and a commitment to excellence, we transform houses into intelligent homes that are more comfortable, secure, and energy-efficient.
+                From initial consultation to post-installation support, we're dedicated to ensuring your smart home experience is seamless and enjoyable.
               </p>
             </AnimatedElement>
 
@@ -95,55 +95,39 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Mission Section */}
       <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
-        <div className="container mx-auto px-4">
-          <AnimatedElement className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              Our Core Values
-            </h2>
-            <p className="text-lg text-muted-foreground font-paragraph max-w-2xl mx-auto">
-              The principles that guide everything we do
-            </p>
-          </AnimatedElement>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <AnimatedElement>
+              <div className="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                <Image
+                  src="https://static.wixstatic.com/media/7ab59d_cadb6df63e42419f8a8d4a348e9c7031~mv2.jpg"
+                  alt="Modern smart home interior"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </AnimatedElement>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: CheckCircle,
-                title: 'Quality First',
-                description: 'We never compromise on the quality of our installations or the products we recommend. Every project is completed to the highest standards.'
-              },
-              {
-                icon: Users,
-                title: 'Customer Focus',
-                description: 'Your satisfaction is our priority. We listen to your needs and provide personalized solutions that fit your lifestyle and budget.'
-              },
-              {
-                icon: Zap,
-                title: 'Innovation',
-                description: 'We stay ahead of the curve with the latest smart home technology, bringing you cutting-edge solutions for modern living.'
-              }
-            ].map((value, index) => (
-              <AnimatedElement key={index} delay={index * 100}>
-                <div className="bg-background rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 h-full">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                    <value.icon className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-heading font-bold text-foreground mb-4">
-                    {value.title}
-                  </h3>
-                  <p className="text-muted-foreground font-paragraph">
-                    {value.description}
-                  </p>
-                </div>
-              </AnimatedElement>
-            ))}
+            <AnimatedElement delay={200}>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Our Mission
+              </h2>
+              <p className="text-lg text-muted-foreground font-paragraph mb-6">
+                At Mokutu HomeTech, we believe that every home deserves to be smart, secure, and connected. Our mission is to make advanced home technology accessible and easy to use for everyone.
+              </p>
+              <p className="text-lg text-muted-foreground font-paragraph mb-6">
+                We specialize in professional installation and configuration of smart home devices, ensuring that your technology works seamlessly together to enhance your daily life.
+              </p>
+              <p className="text-lg text-muted-foreground font-paragraph">
+                With years of experience and a commitment to excellence, we transform houses into intelligent homes that are more comfortable, secure, and energy-efficient.
+              </p>
+            </AnimatedElement>
           </div>
         </div>
       </section>
 
-      {/* Expertise Section */}
+      {/* Our Expertise Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <AnimatedElement className="text-center mb-12">
@@ -172,6 +156,59 @@ export default function AboutPage() {
                   <span className="text-foreground font-paragraph font-semibold">
                     {expertise}
                   </span>
+                </div>
+              </AnimatedElement>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Customers Trust Us Section */}
+      <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
+        <div className="container mx-auto px-4">
+          <AnimatedElement className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+              Why Customers Trust Us
+            </h2>
+            <p className="text-lg text-muted-foreground font-paragraph max-w-2xl mx-auto">
+              We are built on a foundation of reliability, expertise, and customer satisfaction
+            </p>
+          </AnimatedElement>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              {
+                icon: Shield,
+                title: 'Reliable Service',
+                description: 'We stand by our work with comprehensive warranties and ongoing support.'
+              },
+              {
+                icon: Award,
+                title: 'Modern Solutions',
+                description: 'We stay current with the latest smart home technology and best practices.'
+              },
+              {
+                icon: Users,
+                title: 'Customer-Focused',
+                description: 'Your satisfaction is our priority. We listen and deliver personalized solutions.'
+              },
+              {
+                icon: Zap,
+                title: 'Certified Expertise',
+                description: 'Our technicians are certified and trained in the latest smart home systems.'
+              }
+            ].map((item, index) => (
+              <AnimatedElement key={index} delay={index * 100}>
+                <div className="bg-background rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <item.icon className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground font-paragraph text-sm">
+                    {item.description}
+                  </p>
                 </div>
               </AnimatedElement>
             ))}

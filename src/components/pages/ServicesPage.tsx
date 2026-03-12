@@ -83,40 +83,48 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Services List */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="space-y-16 min-h-[400px]">
             {isLoading ? (
-              <div className="col-span-full flex justify-center items-center py-20">
+              <div className="flex justify-center items-center py-20">
                 <LoadingSpinner />
               </div>
             ) : services.length > 0 ? (
               services.map((service, index) => {
                 const IconComponent = serviceIcons[index % serviceIcons.length];
+                const isEven = index % 2 === 0;
+                
                 return (
                   <AnimatedElement key={service._id} delay={index * 100}>
-                    <div className="bg-background border border-border rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] flex flex-col h-full">
-                      {service.serviceImage && (
-                        <div className="relative h-56 bg-secondary/50">
-                          <Image
-                            src={service.serviceImage}
-                            alt={service.serviceTitle || 'Service'}
-                            className="w-full h-full object-cover"
-                            width={400}
-                          />
-                        </div>
-                      )}
-                      <div className="p-6 flex flex-col flex-1">
-                        <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                          <IconComponent className="w-6 h-6 text-primary" />
-                        </div>
-                        <h3 className="text-2xl font-heading font-bold text-foreground mb-3">
+                    <div className={`grid md:grid-cols-2 gap-12 items-center ${!isEven ? 'md:grid-flow-dense' : ''}`}>
+                      <div className={isEven ? 'md:order-1' : 'md:order-2'}>
+                        <h3 className="text-3xl font-heading font-bold text-foreground mb-4">
                           {service.serviceTitle}
                         </h3>
-                        <p className="text-muted-foreground font-paragraph mb-4 flex-1">
+                        <p className="text-lg text-muted-foreground font-paragraph mb-6">
                           {service.shortDescription}
                         </p>
+                        
+                        {service.installationProcess && (
+                          <div className="mb-6">
+                            <h4 className="font-heading font-bold text-foreground mb-3">Installation Process:</h4>
+                            <p className="text-muted-foreground font-paragraph">
+                              {service.installationProcess}
+                            </p>
+                          </div>
+                        )}
+                        
+                        {service.keyBenefits && (
+                          <div className="mb-6">
+                            <h4 className="font-heading font-bold text-foreground mb-3">Key Benefits:</h4>
+                            <p className="text-muted-foreground font-paragraph">
+                              {service.keyBenefits}
+                            </p>
+                          </div>
+                        )}
+                        
                         <Link 
                           to={`/services/${service._id}`}
                           className="inline-flex items-center gap-2 text-primary font-semibold hover:underline group"
@@ -125,12 +133,24 @@ export default function ServicesPage() {
                           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                       </div>
+                      
+                      <div className={isEven ? 'md:order-2' : 'md:order-1'}>
+                        {service.serviceImage && (
+                          <div className="relative rounded-2xl overflow-hidden shadow-lg h-80">
+                            <Image
+                              src={service.serviceImage}
+                              alt={service.serviceTitle || 'Service'}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </AnimatedElement>
                 );
               })
             ) : (
-              <div className="col-span-full text-center py-20">
+              <div className="text-center py-20">
                 <p className="text-lg text-muted-foreground">No services available at the moment.</p>
               </div>
             )}

@@ -273,7 +273,7 @@ export default function HomePage() {
               </div>
             )}
 
-            <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 transition-opacity duration-500 ${isLoadingProducts ? 'opacity-0' : 'opacity-100'}`}>
+            <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 transition-opacity duration-500 ${isLoadingProducts ? 'opacity-0' : 'opacity-100'}`}>
               {products.map((product, index) => (
                 <AnimatedElement key={product._id} delay={index * 100}>
                   <div className="group flex flex-col h-full cursor-pointer" onClick={() => navigate(`/products/${product._id}`)}>
