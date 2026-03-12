@@ -135,12 +135,13 @@ export default function ServicesPage() {
                       </div>
                       
                       <div className={isEven ? 'md:order-2' : 'md:order-1'}>
-                        {service.serviceImage && (
-                          <div className="relative rounded-2xl overflow-hidden shadow-lg h-80">
+                        {service.image && (
+                          <div className="relative h-56 bg-secondary/50">
                             <Image
-                              src={service.serviceImage}
+                              src={service.image}
                               alt={service.serviceTitle || 'Service'}
-                              className="w-full h-full object-cover"
+                              className="w-full h-full object-contain"
+                              width={300}
                             />
                           </div>
                         )}

@@ -10,23 +10,19 @@
 export const SITE_IMAGES = {
   // Hero Section - Homepage
   hero: {
-    main: 'https://static.wixstatic.com/media/7ab59d_cadb6df63e42419f8a8d4a348e9c7031~mv2.jpg',
+    main: '/images/living-room.jpg', // Replace with your uploaded hero image
     alt: 'Modern smart home interior with automated lighting and WiFi connectivity',
   },
-  
-  // About Page Images
   about: {
-    hero: 'https://static.wixstatic.com/media/7ab59d_cadb6df63e42419f8a8d4a348e9c7031~mv2.jpg',
-    team: 'https://static.wixstatic.com/media/7ab59d_cadb6df63e42419f8a8d4a348e9c7031~mv2.jpg',
-    office: 'https://static.wixstatic.com/media/7ab59d_cadb6df63e42419f8a8d4a348e9c7031~mv2.jpg',
+    hero: '/images/living-room.jpg',
+    team: '/images/installer-camera.jpg',
+    office: '/images/smart-panel.jpg',
     heroAlt: 'About Mokutu HomeTech',
-    teamAlt: 'Our professional team',
-    officeAlt: 'Our office space',
+    teamAlt: 'Our professional team installing smart devices',
+    officeAlt: 'Smart home control panel',
   },
-  
-  // Contact Page Images
   contact: {
-    banner: 'https://static.wixstatic.com/media/7ab59d_cadb6df63e42419f8a8d4a348e9c7031~mv2.jpg',
+    banner: '/images/installer-panel.jpg',
     bannerAlt: 'Contact us for smart home solutions',
   },
 };

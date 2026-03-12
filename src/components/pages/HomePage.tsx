@@ -187,7 +187,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500 z-10 mix-blend-overlay"></div>
                 <Image
                   src={SITE_IMAGES.hero.main}
-                  alt="Modern smart home interior with automated lighting and WiFi connectivity"
+                  alt={SITE_IMAGES.hero.alt}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
