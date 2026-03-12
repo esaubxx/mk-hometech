@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Image } from '@/components/ui/image';
+import { SITE_IMAGES } from '@/config/images';
 import { Shield, Award, Users, Target, CheckCircle, Zap } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -85,8 +86,8 @@ export default function AboutPage() {
             <AnimatedElement delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-xl h-96">
                 <Image
-                  src="https://static.wixstatic.com/media/7ab59d_2103d790a8c34fa7aeffe7a189826991~mv2.jpg"
-                  alt="Smart home installation and setup"
+                  src={SITE_IMAGES.about.team}
+                  alt={SITE_IMAGES.about.teamAlt}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -102,8 +103,8 @@ export default function AboutPage() {
             <AnimatedElement>
               <div className="relative rounded-2xl overflow-hidden shadow-xl h-96">
                 <Image
-                  src="https://static.wixstatic.com/media/7ab59d_cadb6df63e42419f8a8d4a348e9c7031~mv2.jpg"
-                  alt="Modern smart home interior"
+                  src={SITE_IMAGES.about.office}
+                  alt={SITE_IMAGES.about.officeAlt}
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -7,6 +7,7 @@ import { useCart, useCurrency, formatPrice, DEFAULT_CURRENCY } from '@/integrati
 import { Button } from '@/components/ui/button';
 import { Image } from '@/components/ui/image';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
+import { SITE_IMAGES } from '@/config/images';
 import { 
   Home, 
   Wifi, 
@@ -185,7 +186,7 @@ export default function HomePage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-square group">
                 <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500 z-10 mix-blend-overlay"></div>
                 <Image
-                  src="https://static.wixstatic.com/media/7ab59d_cadb6df63e42419f8a8d4a348e9c7031~mv2.jpg"
+                  src={SITE_IMAGES.hero.main}
                   alt="Modern smart home interior with automated lighting and WiFi connectivity"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
