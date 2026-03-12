@@ -1,0 +1,217 @@
+{
+  "id": "206fe625-a5d5-4825-a942-c177cce10d2a",
+  "initialPrompt": "Create a website inspired by https://mokutuhometech.netlify.app/",
+  "siteName": "mokutuhometech.netlify.app",
+  "brandBook": {
+    "tones": [
+      "authoritative",
+      "helpful",
+      "forward-thinking",
+      "clear",
+      "trustworthy"
+    ],
+    "designStyle": {
+      "primaryStyle": [
+        "Clean Tech",
+        "Modern Professional"
+      ],
+      "supportingStyles": [
+        "Minimalist",
+        "Service-Oriented"
+      ]
+    },
+    "toneOfVoice": "Professional, Expert, Innovative, Reliable, Accessible",
+    "graphicElements": {
+      "icons": "Clean, line-based icons that are easily recognizable and consistent in style. Primarily monochromatic, using the foreground or primary color.",
+      "stickers": "",
+      "illustrations": "Modern, flat or subtly shaded illustrations that depict smart home technology, connectivity, and modern living. Avoid overly complex or abstract styles."
+    },
+    "designSummary": "**The Digital Nexus: Bridging Home Automation and User Experience**\n\nThe Vision: Mokutu HomeTech is at the forefront of smart home integration, offering a seamless blend of professional installation and cutting-edge technology. Our design philosophy is to embody this fusion – a clean, intuitive interface that feels both highly advanced and accessible. We will leverage a dynamic layout that guides users through complex services with clarity, using a palette that balances technological sophistication with approachability. The goal is to create a digital space that feels as reliable and efficient as the smart home systems we install.\n\n**Execution Blueprint:**\n1. Layout as a Flow: Employ a structured yet fluid layout that guides the user through service offerings and product information, mimicking the ease of a smart home setup.\n2. Typography for Clarity and Tech: Utilize a sans-serif font for headings that conveys modernity and a highly readable sans-serif for body text to ensure technical details are easily digestible.\n3. Color Harmony: A primary color that signifies trust and expertise, complemented by an accent color for calls to action, all set against a clean, bright background to maintain an open and professional feel.\n4. Component Precision: Design components with sharp, clean lines and subtle interactive states to reflect the precision of smart technology installation.",
+    "layout": {
+      "grid": {
+        "margins": "Consistent margins around sections and content blocks, typically 40px or 80px.",
+        "padding": "Generous padding within containers and components, typically 24px or 40px.",
+        "compositionApproach": "Responsive 12-column grid system with flexible gutters and consistent spacing.",
+        "spacing": {
+          "gaps": "Consistent 24px (3x base unit) for grid gaps.",
+          "rows": "Flexible, determined by content and visual hierarchy.",
+          "columns": "8px base unit, multiples for spacing (e.g., 24px, 40px, 80px).",
+          "compositionApproach": "Not specified"
+        }
+      },
+      "layoutDna": {
+        "contrastSpectrum": "High contrast between text and background, with accent colors providing visual pops.",
+        "densitySpectrum": "Moderate density, balancing information with whitespace.",
+        "textVsImageEmphasis": "Balanced emphasis, with clear typography for service details and high-quality imagery to showcase smart home solutions.",
+        "complexitySpectrum": "Low to moderate complexity, focusing on intuitive navigation and clear presentation of services and products.",
+        "gridAlignmentSpectrum": "Structured, primarily using a 12-column grid for consistency, with occasional asymmetrical elements for visual interest.",
+        "negativeSpaceUsage": "Generous use of whitespace to create a clean, modern, and uncluttered feel, enhancing readability and focus."
+      },
+      "heroSectionLayout": "**The Dynamic Service Showcase**\nComposition (Tailwind Spec): Container `h-screen grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8 md:p-16`. Left column: `flex flex-col justify-center`. Headline 'Transform Your Home with Smart Technology' (`text-7xl font-bold text-foreground mb-6`). Sub-headline 'Professional installation and configuration for a connected living experience.' (`text-xl text-muted-foreground mb-8`). Primary Button 'Book Installation' (`bg-primary text-primary-foreground py-4 px-8 rounded-lg text-lg font-semibold hover:bg-primary-dark`). Right column: `relative flex items-center justify-center`. A high-quality, aspirational image of a modern smart home interior (`rounded-xl shadow-xl`).\nSignature Hook (Framer Motion Spec): Headline letters animate in with a slight stagger. The primary button has a subtle `whileHover` scale effect. The hero image fades in and slightly scales up on load."
+    },
+    "components": {
+      "images": "Layout Role: Integrated within content sections, often full-width or within defined content columns. | Gallery Type: Standard grid layouts for product listings, single large images for service highlights. Images are clean and well-lit, showcasing technology and lifestyle benefits.",
+      "buttons": "Primary: background-color: #1F7A63, color: #FFFFFF, border-radius: 8px, padding: 12px 24px, font-weight: 600. Secondary: background-color: transparent, color: #1F7A63, border: 1px solid #1F7A63, border-radius: 8px, padding: 12px 24px, font-weight: 600. Hover states should provide subtle visual feedback.",
+      "containers": "Method: Whitespace and subtle borders/shadows. Style: Sections separated by generous vertical margins (e.g., 80px). Cards use a light background (#F0F0F0) with subtle rounded corners (8px) and no harsh shadows, creating a clean, layered effect."
+    },
+    "palette": {
+      "colors": {
+        "customColors": [
+          {
+            "name": "destructive",
+            "value": "#ff0000"
+          },
+          {
+            "name": "destructiveForeground",
+            "value": "#FFFFFF"
+          },
+          {
+            "name": "muted",
+            "value": "#F0F0F0"
+          },
+          {
+            "name": "mutedForeground",
+            "value": "#666666"
+          }
+        ],
+        "background": "#FFFFFF",
+        "secondary": "#E53935",
+        "foreground": "#1F1F1F",
+        "secondaryForeground": "#FFFFFF",
+        "primaryForeground": "#FFFFFF",
+        "primary": "#1F7A63"
+      },
+      "paletteUsageGuide": "The primary color (#1F7A63) is used for main calls to action, navigation elements, and key service highlights. The secondary color (#E53935) serves as an accent for urgent actions or special promotions. The background is clean white (#FFFFFF) for maximum readability, with dark foreground text (#1F1F1F) for contrast. Muted tones (#F0F0F0) are used for subtle dividers or background elements in cards.",
+      "paletteAccessibilityNotes": "Ensure sufficient contrast ratios between text and background colors. Primary and secondary colors have been chosen to provide good contrast against the white background. Text on primary and secondary buttons is white for legibility. Muted background elements have dark text for readability."
+    },
+    "typography": {
+      "headings": {
+        "font": {
+          "fontFamily": "inter",
+          "role": "headings",
+          "fontJustification": ""
+        },
+        "headingsAccessibilityNotes": "Ensure heading levels are used semantically (H1 for main title, H2 for sections, etc.) to aid screen reader navigation. Font size and weight should ensure readability.",
+        "headingsSimilarFonts": [],
+        "headingsUsageGuide": "Headings should be used to structure content and draw attention to key sections. Maintain a clear hierarchy from H1 to H3. Use bold weights for emphasis."
+      },
+      "paragraphs": {
+        "font": {
+          "fontFamily": "inter",
+          "role": "paragraphs",
+          "fontJustification": ""
+        },
+        "paragraphsUsageGuide": "Paragraph text should be used for descriptive content, service details, and product information. Maintain consistent line height and spacing for optimal readability.",
+        "paragraphsSimilarFonts": [],
+        "paragraphsAccessibilityNotes": "Paragraph text should be legible at a minimum size of 16px. Line height should be generous (e.g., 1.5) to improve readability for users with visual impairments or cognitive load."
+      },
+      "customFontFamilies": {},
+      "fontSizes": [
+        {
+          "name": "xs",
+          "size": "0.75rem",
+          "lineHeight": "1.25",
+          "letterSpacing": "0.02em",
+          "fontWeight": "400"
+        },
+        {
+          "name": "sm",
+          "size": "0.875rem",
+          "lineHeight": "1.3",
+          "letterSpacing": "0.02em",
+          "fontWeight": "400"
+        },
+        {
+          "name": "base",
+          "size": "1rem",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.02em",
+          "fontWeight": "400"
+        },
+        {
+          "name": "lg",
+          "size": "1.125rem",
+          "lineHeight": "1.4",
+          "letterSpacing": "0.02em",
+          "fontWeight": "500"
+        },
+        {
+          "name": "xl",
+          "size": "1.25rem",
+          "lineHeight": "1.35",
+          "letterSpacing": "0.02em",
+          "fontWeight": "500"
+        },
+        {
+          "name": "2xl",
+          "size": "1.5rem",
+          "lineHeight": "1.3",
+          "letterSpacing": "0.01em",
+          "fontWeight": "600"
+        },
+        {
+          "name": "3xl",
+          "size": "1.875rem",
+          "lineHeight": "1.25",
+          "letterSpacing": "0.01em",
+          "fontWeight": "600"
+        },
+        {
+          "name": "4xl",
+          "size": "2.25rem",
+          "lineHeight": "1.2",
+          "letterSpacing": "0.005em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "5xl",
+          "size": "3rem",
+          "lineHeight": "1.15",
+          "letterSpacing": "0.005em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "6xl",
+          "size": "3.75rem",
+          "lineHeight": "1.1",
+          "letterSpacing": "0.002em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "7xl",
+          "size": "4.5rem",
+          "lineHeight": "1.05",
+          "letterSpacing": "0.001em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "8xl",
+          "size": "6rem",
+          "lineHeight": "1",
+          "letterSpacing": "0",
+          "fontWeight": "700"
+        },
+        {
+          "name": "9xl",
+          "size": "8rem",
+          "lineHeight": "1",
+          "letterSpacing": "0",
+          "fontWeight": "700"
+        }
+      ],
+      "welcomeSectionTypography": {
+        "placement": "Centered, prominent display",
+        "implementation": "Large, bold headings using 'inter' font family. Sub-headline in a slightly smaller, regular weight. Ensure ample spacing around text elements."
+      }
+    },
+    "originImagesUrls": []
+  },
+  "attachments": {
+    "contentImagesUrls": [],
+    "inspirationImagesUrls": [
+      "https://wixmp-c562ea68f10846b458285ce5.wixmp.com/scraped-screenshots/screenshot-1773341316046.webp"
+    ]
+  },
+  "status": "READY",
+  "plan": "\n\n```json\n{\n  \"sections\": [\n    {\n      \"id\": \"overview\",\n      \"title\": \"## Overview\",\n      \"content\": \"This site showcases Mokutu HomeTech's smart home installation services and product offerings, allowing visitors to explore services, view products, and contact the company for professional smart home solutions.\"\n    },\n    {\n      \"id\": \"key-features\",\n      \"title\": \"## Key features\",\n      \"content\": \"- **View Service Listing**: Browse all smart home installation services offered by Mokutu HomeTech.\\n- **View Service Details**: See detailed information about each service including installation process and benefits.\\n- **View Product Listing**: Explore smart home devices and products available for installation.\\n- **View Product Details**: Access specifications and features of individual smart home products.\\n- **Submit Contact Form**: Send inquiries and booking requests directly to Mokutu HomeTech.\",\n      \"metadata\": [\n        { \"id\": \"view-service-listing\", \"name\": \"View Service Listing\" },\n        { \"id\": \"view-service-details\", \"name\": \"View Service Details\" },\n        { \"id\": \"view-product-listing\", \"name\": \"View Product Listing\" },\n        { \"id\": \"view-product-details\", \"name\": \"View Product Details\" },\n        { \"id\": \"submit-contact-form\", \"name\": \"Submit Contact Form\" }\n      ]\n    },\n    {\n      \"id\": \"structure\",\n      \"title\": \"## Structure\",\n      \"content\": \"- **Header (Reusable)**: Contains site logo, navigation menu with links to Home, Services, Products, About, and Contact pages.\\n- **Footer (Reusable)**: Displays company information, quick links, contact details, and social media connections.\\n- **Home Page**: Features hero section highlighting smart home expertise, overview of services, featured products, and call-to-action for booking installation.\\n- **Services Page**: Lists all installation services with filtering options and detailed service descriptions accessible via detail view.\\n- **Products Page**: Showcases smart home devices and products with detail views for specifications.\\n- **About Page**: Presents company mission, expertise in smart technology, and professional installation commitment.\\n- **Contact Page**: Provides contact form for inquiries and booking requests, along with company contact information.\"\n    }\n  ],\n  \"apps\": [\n    {\n      \"id\": \"wix-cms\",\n      \"keyFeatures\": [\n        { \"id\": \"view-service-listing\", \"name\": \"View Service Listing\" },\n        { \"id\": \"view-service-details\", \"name\": \"View Service Details\" },\n        { \"id\": \"view-product-listing\", \"name\": \"View Product Listing\" },\n        { \"id\": \"view-product-details\", \"name\": \"View Product Details\" },\n        { \"id\": \"submit-contact-form\", \"name\": \"Submit Contact Form\" }\n      ]\n    }\n  ],\n  \"version\": \"4.0.1\"\n}\n```"
+}

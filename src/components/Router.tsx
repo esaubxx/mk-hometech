@@ -2,6 +2,13 @@ import { MemberProvider } from '@/integrations';
 import { createBrowserRouter, RouterProvider, Navigate, Outlet } from 'react-router-dom';
 import { ScrollToTop } from '@/lib/scroll-to-top';
 import ErrorPage from '@/integrations/errorHandlers/ErrorPage';
+import HomePage from '@/components/pages/HomePage';
+import ServicesPage from '@/components/pages/ServicesPage';
+import ServiceDetailPage from '@/components/pages/ServiceDetailPage';
+import ProductsPage from '@/components/pages/ProductsPage';
+import ProductDetailPage from '@/components/pages/ProductDetailPage';
+import AboutPage from '@/components/pages/AboutPage';
+import ContactPage from '@/components/pages/ContactPage';
 
 // Layout component that includes ScrollToTop
 function Layout() {
@@ -21,9 +28,51 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <div>Wix Vibe</div>,
+        element: <HomePage />,
         routeMetadata: {
           pageIdentifier: 'home',
+        },
+      },
+      {
+        path: "services",
+        element: <ServicesPage />,
+        routeMetadata: {
+          pageIdentifier: 'services',
+        },
+      },
+      {
+        path: "services/:id",
+        element: <ServiceDetailPage />,
+        routeMetadata: {
+          pageIdentifier: 'service-detail',
+        },
+      },
+      {
+        path: "products",
+        element: <ProductsPage />,
+        routeMetadata: {
+          pageIdentifier: 'products',
+        },
+      },
+      {
+        path: "products/:id",
+        element: <ProductDetailPage />,
+        routeMetadata: {
+          pageIdentifier: 'product-detail',
+        },
+      },
+      {
+        path: "about",
+        element: <AboutPage />,
+        routeMetadata: {
+          pageIdentifier: 'about',
+        },
+      },
+      {
+        path: "contact",
+        element: <ContactPage />,
+        routeMetadata: {
+          pageIdentifier: 'contact',
         },
       },
       {
