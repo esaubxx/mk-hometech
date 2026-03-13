@@ -10,29 +10,29 @@
 export const SITE_IMAGES = {
   // Hero Section - Homepage
   hero: {
-    main: '/images/hero-smart-home.jpg', // Replace with your uploaded hero image
+    main: 'https://static.wixstatic.com/media/7ab59d_c964e659fad241e49d9e3873446ddf24~mv2.jpg',
     alt: 'Modern smart home interior with automated lighting and WiFi connectivity',
   },
   about: {
-    hero: '/images/hero-smart-home.jpg',
-    team: '/images/about-team.jpg',
-    office: '/images/about-mission.jpg',
-    expertise: '/images/about-expertise.jpg',
+    hero: 'https://static.wixstatic.com/media/7ab59d_c964e659fad241e49d9e3873446ddf24~mv2.jpg',
+    team: 'https://static.wixstatic.com/media/7ab59d_18dc7d1d58de4b88894783f550d78909~mv2.jpg',
+    office: 'https://static.wixstatic.com/media/7ab59d_b42209407683475aaf1008fe590eaa04~mv2.jpg',
+    expertise: 'https://static.wixstatic.com/media/7ab59d_01cc9e7a467143f4b425694868cfdca0~mv2.jpg',
     heroAlt: 'About Mokutu HomeTech',
     teamAlt: 'Our professional team installing smart devices',
     officeAlt: 'Smart home control panel',
     expertiseAlt: 'Our expertise in smart home solutions',
   },
   contact: {
-    banner: '/images/hero-smart-home.jpg',
+    banner: 'https://static.wixstatic.com/media/7ab59d_c964e659fad241e49d9e3873446ddf24~mv2.jpg',
     bannerAlt: 'Contact us for smart home solutions',
   },
   services: {
-    installation: '/images/service-installation.jpg',
-    wifi: '/images/service-wifi.jpg',
-    security: '/images/service-security.jpg',
-    lighting: '/images/service-lighting.jpg',
-    setup: '/images/service-setup.jpg',
+    installation: 'https://static.wixstatic.com/media/7ab59d_e8ed3a2c0ca24ff0aa329a6c42375f6b~mv2.jpg',
+    wifi: 'https://static.wixstatic.com/media/7ab59d_56b1267a247e41a8a5f0ee3e1f854c14~mv2.jpg',
+    security: 'https://static.wixstatic.com/media/7ab59d_e08b40868b43489e990664e6ffb0cfff~mv2.jpg',
+    lighting: 'https://static.wixstatic.com/media/7ab59d_589b8fcbff994d328e653ca1589ecca7~mv2.jpg',
+    setup: 'https://static.wixstatic.com/media/7ab59d_5949cccd247a475b9e967c1eb2217c65~mv2.jpg',
   },
 };
 
