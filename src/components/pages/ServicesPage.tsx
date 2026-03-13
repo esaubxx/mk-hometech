@@ -4,7 +4,6 @@ import { BaseCrudService } from '@/integrations';
 import { SmartHomeServices } from '@/entities';
 import { Image } from '@/components/ui/image';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
-import { SITE_IMAGES } from '@/config/images';
 import { Home, Wifi, Camera, Lightbulb, Settings, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -65,28 +64,6 @@ export default function ServicesPage() {
   };
 
   const serviceIcons = [Home, Wifi, Camera, Lightbulb, Settings];
-
-  const getServiceImage = (index: number): string => {
-    const images = [
-      SITE_IMAGES.services.installation,
-      SITE_IMAGES.services.wifi,
-      SITE_IMAGES.services.security,
-      SITE_IMAGES.services.lighting,
-      SITE_IMAGES.services.setup,
-    ];
-    return images[index % images.length];
-  };
-
-  const getServiceImageAlt = (index: number): string => {
-    const alts = [
-      SITE_IMAGES.services.installationAlt,
-      SITE_IMAGES.services.wifiAlt,
-      SITE_IMAGES.services.securityAlt,
-      SITE_IMAGES.services.lightingAlt,
-      SITE_IMAGES.services.setupAlt,
-    ];
-    return alts[index % alts.length];
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -158,12 +135,12 @@ export default function ServicesPage() {
                       </div>
                       
                       <div className={isEven ? 'md:order-2' : 'md:order-1'}>
-                        {service.serviceImage && (
-                          <div className="relative h-56 bg-secondary/50 rounded-xl overflow-hidden shadow-lg">
+                        {service.image && (
+                          <div className="relative h-56 bg-secondary/50">
                             <Image
-                              src={getServiceImage(index)}
-                              alt={getServiceImageAlt(index)}
-                              className="w-full h-full object-cover"
+                              src={service.image}
+                              alt={service.serviceTitle || 'Service'}
+                              className="w-full h-full object-contain"
                               width={300}
                             />
                           </div>

@@ -10,30 +10,16 @@
 export const SITE_IMAGES = {
   // Hero Section - Homepage
   hero: {
-    main: '/images/hero-smart-home.jpg', // Replace with your uploaded hero image
+    main: '/images/living-room.jpg', // Replace with your uploaded hero image
     alt: 'Modern smart home interior with automated lighting and WiFi connectivity',
   },
   about: {
-    hero: '/images/hero-smart-home.jpg',
-    team: '/images/about-team.jpg',
-    office: '/images/about-mission.jpg',
-    expertise: '/images/about-expertise.jpg',
+    hero: '/images/living-room.jpg',
+    team: '/images/installer-camera.jpg',
+    office: '/images/smart-panel.jpg',
     heroAlt: 'About Mokutu HomeTech',
     teamAlt: 'Our professional team installing smart devices',
     officeAlt: 'Smart home control panel',
-    expertiseAlt: 'Our expertise in smart home solutions',
-  },
-  services: {
-    installation: '/images/service-installation.jpg',
-    wifi: '/images/service-wifi.jpg',
-    security: '/images/service-security.jpg',
-    lighting: '/images/service-lighting.jpg',
-    setup: '/images/service-setup.jpg',
-    installationAlt: 'Smart home installation service',
-    wifiAlt: 'WiFi setup and optimization',
-    securityAlt: 'Security camera installation',
-    lightingAlt: 'Smart lighting installation',
-    setupAlt: 'Smart device setup service',
   },
   contact: {
     banner: '/images/installer-panel.jpg',
