@@ -130,15 +130,27 @@ export default function AboutPage() {
 
       {/* Our Expertise Section */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <AnimatedElement className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              Our Expertise
-            </h2>
-            <p className="text-lg text-muted-foreground font-paragraph max-w-2xl mx-auto">
-              Comprehensive smart home solutions backed by years of experience
-            </p>
-          </AnimatedElement>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+            <AnimatedElement>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Our Expertise
+              </h2>
+              <p className="text-lg text-muted-foreground font-paragraph mb-8">
+                Comprehensive smart home solutions backed by years of experience
+              </p>
+            </AnimatedElement>
+
+            <AnimatedElement delay={200}>
+              <div className="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                <Image
+                  src={SITE_IMAGES.about.expertise}
+                  alt={SITE_IMAGES.about.expertiseAlt}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </AnimatedElement>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
